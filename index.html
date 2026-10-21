@@ -11,8 +11,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 :root {
-  --peach: #FFE1D7;
-  --peach-soft: #FFF3EE;
+  --peach: #F2F6FF;
+  --peach-soft: #FFFFFF;
+  --inset: #E8F0FF;
   --sky: #84AFFB;
   --sky-soft: #DCE8FE;
   --blue: #0259DD;
@@ -28,8 +29,9 @@
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --peach: #14213F;
+    --peach: #0F1B36;
     --peach-soft: #1B2B50;
+    --inset: #243A6A;
     --sky-soft: #243A6A;
     --ink: #FFE9E1;
     --ink-muted: #B9C7E6;
@@ -74,7 +76,7 @@ header { display: flex; flex-direction: column; gap: 12px; }
 .badge { flex: none; width: 2.2rem; height: 2.2rem; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-family: var(--pop); font-size: .95rem; }
 .badge.sm { width: 1.7rem; height: 1.7rem; font-size: .75rem; }
 .plist { display: flex; flex-direction: column; gap: 6px; }
-.pitem { display: flex; align-items: center; gap: 8px; padding: 7px 10px; border-radius: 12px; background: var(--peach); border: 1px solid var(--line); }
+.pitem { display: flex; align-items: center; gap: 8px; padding: 7px 10px; border-radius: 12px; background: var(--inset); border: 1px solid var(--line); }
 .pitem .pn { flex: 1; overflow-wrap: anywhere; }
 .pitem .pd { font-size: .85rem; color: var(--ink-muted); font-variant-numeric: tabular-nums; white-space: nowrap; font-weight: 700; }
 .late { color: var(--coral-ink) !important; font-weight: 700; }
@@ -127,7 +129,7 @@ td.sub { color: var(--ink-muted); font-size: .85rem; white-space: nowrap; }
 <div class="wrap">
   <header>
     <h1>ツナギビト 制作ダッシュボード</h1>
-    <p class="lead">どの回がいま誰の手元にあるかを、編集管理シートと Slack「proj-動画編集確認」から読み取った現況です。見るだけのページで、編集は不要です。</p>
+    <p class="lead">編集管理スプレッドシートと Slack「proj-動画編集確認」から読み取った進捗管理画面です</p>
     <span class="updated" id="updated">更新：読み込み中</span>
   </header>
 
@@ -139,12 +141,12 @@ td.sub { color: var(--ink-muted); font-size: .85rem; white-space: nowrap; }
   </section>
 
   <section class="sec">
-    <div class="sechead"><h2>誰がどの回を持っているか</h2><p class="note">日付は編集完了の予定日です。⚠は予定日を過ぎています。</p></div>
+    <div class="sechead"><h2>編集担当</h2><p class="note">日付は編集完了の予定日です。⚠は予定日を過ぎています。</p></div>
     <div class="people" id="people"></div>
   </section>
 
   <section class="sec">
-    <div class="sechead"><h2>工程の流れ</h2><p class="note">左から右へ進みます。丸い印は、いま動く番の人です。</p></div>
+    <div class="sechead"><h2>ステータス</h2><p class="note">左から右へ進みます。丸い印は、いま動く番の人です。</p></div>
     <div class="boardwrap"><div class="board" id="board"></div></div>
   </section>
 

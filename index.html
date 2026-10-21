@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%230259DD%27/%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%276%27 fill=%27%23FF6648%27/%3E%3C/svg%3E">
+<title>ツナギビト 制作ダッシュボード</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --peach: #FFE1D7;
+  --peach-soft: #FFF3EE;
+  --sky: #84AFFB;
+  --sky-soft: #DCE8FE;
+  --blue: #0259DD;
+  --coral: #FF6648;
+  --coral-ink: #C2330F;
+  --navy: #0B2A5B;
+  --ink: #12274A;
+  --ink-muted: #4A5E80;
+  --line: rgba(2, 89, 221, .22);
+  --radius: 18px;
+  --pop: "Dela Gothic One", "Zen Maru Gothic", "Hiragino Maru Gothic ProN", "Yu Gothic", sans-serif;
+  --body: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --peach: #14213F;
+    --peach-soft: #1B2B50;
+    --sky-soft: #243A6A;
+    --ink: #FFE9E1;
+    --ink-muted: #B9C7E6;
+    --line: rgba(132, 175, 251, .35);
+    --blue: #84AFFB;
+    --coral-ink: #FF8E78;
+    --navy: #FFE1D7;
+  }
+}
+* { box-sizing: border-box; min-width: 0; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--peach); color: var(--ink);
+  font-family: var(--body); font-size: 16px; line-height: 1.6; font-weight: 500;
+}
+.wrap { max-width: 80rem; margin: 0 auto; padding: 24px 16px 56px; display: flex; flex-direction: column; gap: 32px; }
+h1, h2 { font-family: var(--pop); font-weight: 400; margin: 0; letter-spacing: .02em; }
+h1 { font-size: clamp(1.7rem, 4.5vw, 2.6rem); color: var(--blue); line-height: 1.25; text-wrap: balance; }
+h2 { font-size: 1.35rem; color: var(--blue); }
+.lead { margin: 0; max-width: 46rem; color: var(--ink-muted); }
+.note { margin: 0; font-size: .85rem; color: var(--ink-muted); line-height: 1.5; }
+.updated { display: inline-flex; align-self: flex-start; gap: .4rem; align-items: center; background: var(--sky); color: #0B2A5B; border-radius: 999px; padding: .2rem .9rem; font-size: .85rem; font-weight: 700; }
+.updated::before { content: ""; width: .5rem; height: .5rem; border-radius: 50%; background: var(--blue); }
+header { display: flex; flex-direction: column; gap: 12px; }
+.sec { display: flex; flex-direction: column; gap: 14px; }
+.sechead { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 16px; }
+
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr)); gap: 12px; }
+.tile { border-radius: var(--radius); padding: 14px 18px; display: flex; flex-direction: column; gap: 2px; background: var(--peach-soft); border: 2px solid var(--blue); }
+.tile .lbl { font-size: .85rem; font-weight: 700; color: var(--ink-muted); }
+.tile .val { font-family: var(--pop); font-size: 2.2rem; line-height: 1.2; color: var(--blue); font-variant-numeric: tabular-nums; }
+.tile.t2 { background: var(--sky); border-color: var(--sky); } .tile.t2 .lbl, .tile.t2 .val { color: #0B2A5B; }
+.tile.t3 { background: var(--blue); border-color: var(--blue); } .tile.t3 .lbl, .tile.t3 .val { color: #FFE1D7; }
+.tile.warn { background: var(--coral); border-color: var(--coral); } .tile.warn .lbl, .tile.warn .val { color: #fff; }
+.tile.warn .val { text-shadow: 0 1px 0 rgba(0,0,0,.12); }
+
+.people { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: 14px; align-items: start; }
+.pcard { background: var(--peach-soft); border: 2px solid var(--line); border-radius: var(--radius); padding: 14px; display: flex; flex-direction: column; gap: 10px; }
+.phead { display: flex; align-items: center; gap: 10px; }
+.phead .nm { flex: 1; font-weight: 700; }
+.phead .ct { font-family: var(--pop); font-size: 1.8rem; line-height: 1; color: var(--blue); font-variant-numeric: tabular-nums; }
+.badge { flex: none; width: 2.2rem; height: 2.2rem; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-family: var(--pop); font-size: .95rem; }
+.badge.sm { width: 1.7rem; height: 1.7rem; font-size: .75rem; }
+.plist { display: flex; flex-direction: column; gap: 6px; }
+.pitem { display: flex; align-items: center; gap: 8px; padding: 7px 10px; border-radius: 12px; background: var(--peach); border: 1px solid var(--line); }
+.pitem .pn { flex: 1; overflow-wrap: anywhere; }
+.pitem .pd { font-size: .85rem; color: var(--ink-muted); font-variant-numeric: tabular-nums; white-space: nowrap; font-weight: 700; }
+.late { color: var(--coral-ink) !important; font-weight: 700; }
+.late::before { content: "⚠ "; }
+.dot { flex: none; width: .7rem; height: .7rem; border-radius: 50%; display: inline-block; }
+.empty { color: var(--ink-muted); font-size: .85rem; padding: 2px 0; }
+
+.boardwrap { overflow-x: auto; padding-bottom: 6px; }
+.board { display: grid; grid-template-columns: repeat(5, minmax(12rem, 1fr)); gap: 16px; min-width: 62rem; }
+.col { display: flex; flex-direction: column; gap: 10px; }
+.colhead { display: flex; align-items: center; gap: 8px; padding: 9px 16px; border-radius: 999px; font-weight: 700; position: relative; }
+.colhead .ct { margin-left: auto; font-family: var(--pop); font-variant-numeric: tabular-nums; }
+.col:not(:last-child) .colhead::after { content: "▶"; position: absolute; right: -14px; top: 50%; transform: translateY(-50%); color: var(--blue); font-size: .7rem; }
+.card { background: var(--peach-soft); border: 2px solid var(--line); border-radius: var(--radius); padding: 10px 14px; display: flex; flex-direction: column; gap: 6px; }
+.card .t { font-weight: 700; overflow-wrap: anywhere; }
+.card .s { font-size: .85rem; color: var(--ink-muted); }
+.card .r { display: flex; align-items: center; gap: 8px; font-size: .85rem; color: var(--ink-muted); }
+.card .r .grow { flex: 1; }
+
+.seg { display: inline-flex; border-radius: 999px; padding: 3px; gap: 3px; background: var(--sky-soft); }
+.segbtn { font: inherit; font-weight: 700; font-size: .9rem; padding: 6px 18px; border-radius: 999px; border: 0; background: transparent; color: var(--ink); cursor: pointer; min-height: 36px; }
+.segbtn[aria-pressed="true"] { background: var(--blue); color: #FFE1D7; }
+:root[data-theme="dark"] .segbtn[aria-pressed="true"] { color: #0B2A5B; }
+.segbtn:focus-visible { outline: 3px solid var(--coral); outline-offset: 2px; }
+.buckets { display: flex; flex-direction: column; gap: 18px; }
+.bucket { display: flex; flex-direction: column; gap: 8px; }
+.bhead { font-family: var(--pop); font-size: 1rem; color: var(--blue); }
+.bhead.lateh { color: var(--coral-ink); }
+.bgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr)); gap: 10px; }
+.dcard { background: var(--peach-soft); border: 2px solid var(--line); border-radius: var(--radius); padding: 10px 14px; display: flex; align-items: center; gap: 12px; }
+.dcard .dd { font-family: var(--pop); font-size: 1.35rem; color: var(--blue); font-variant-numeric: tabular-nums; min-width: 3.4rem; }
+.dcard .dd.late::before { content: ""; }
+.dcard .dd.late { color: var(--coral-ink); }
+.dcard .dm { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+.dcard .dm .t { font-weight: 700; overflow-wrap: anywhere; }
+.dcard .dm .s { font-size: .85rem; color: var(--ink-muted); display: flex; align-items: center; gap: 6px; }
+
+details { background: var(--peach-soft); border: 2px solid var(--line); border-radius: var(--radius); padding: 14px 18px; }
+summary { cursor: pointer; font-weight: 700; color: var(--blue); }
+.tablebox { overflow-x: auto; margin-top: 12px; }
+table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+th { text-align: left; font-size: .8rem; color: var(--ink-muted); padding: 6px 14px 6px 0; border-bottom: 2px solid var(--line); white-space: nowrap; }
+td { padding: 8px 14px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+td.sub { color: var(--ink-muted); font-size: .85rem; white-space: nowrap; }
+.fail { padding: 28px 16px; text-align: center; color: var(--coral-ink); font-weight: 700; }
+@media (max-width: 600px) { .wrap { gap: 26px; } h2 { font-size: 1.2rem; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>ツナギビト 制作ダッシュボード</h1>
+    <p class="lead">どの回がいま誰の手元にあるかを、編集管理シートと Slack「proj-動画編集確認」から読み取った現況です。見るだけのページで、編集は不要です。</p>
+    <span class="updated" id="updated">更新：読み込み中</span>
+  </header>
+
+  <section class="tiles" aria-label="件数">
+    <div class="tile"><span class="lbl">全体の回数</span><span class="val" id="k-all">—</span></div>
+    <div class="tile t2"><span class="lbl">配信済み</span><span class="val" id="k-done">—</span></div>
+    <div class="tile t3"><span class="lbl">進行中</span><span class="val" id="k-active">—</span></div>
+    <div class="tile warn"><span class="lbl">担当が未定</span><span class="val" id="k-undec">—</span></div>
+  </section>
+
+  <section class="sec">
+    <div class="sechead"><h2>誰がどの回を持っているか</h2><p class="note">日付は編集完了の予定日です。⚠は予定日を過ぎています。</p></div>
+    <div class="people" id="people"></div>
+  </section>
+
+  <section class="sec">
+    <div class="sechead"><h2>工程の流れ</h2><p class="note">左から右へ進みます。丸い印は、いま動く番の人です。</p></div>
+    <div class="boardwrap"><div class="board" id="board"></div></div>
+  </section>
+
+  <section class="sec">
+    <div class="sechead">
+      <h2>締め切り</h2>
+      <div class="seg" id="seg" role="group" aria-label="見る日付"></div>
+    </div>
+    <div class="buckets" id="buckets"></div>
+  </section>
+
+  <details>
+    <summary>一覧で見る</summary>
+    <p class="note" style="margin-top:8px">「根拠」は、その担当をどこから読み取ったかを示します。推定は仮の判断なので、違っていれば直してください。</p>
+    <div class="tablebox">
+      <table>
+        <thead><tr>
+          <th>放送日</th><th>コーナー</th><th>相手</th><th>いまの工程</th><th>いま持っている人</th><th>編集者</th><th>編集完了</th><th>Slack返信</th><th>根拠</th>
+        </tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </details>
+
+  <p class="note">放送回が未定の行は、コーナーと相手の名前で見分けています。シートと Slack の情報は、1日2回（8時・20時ごろ）更新される写しです。</p>
+</div>
+
+<script>
+(function () {
+  var HOLDERS = ['野上', '鶴崎', '確認（又多・鶴崎）', '先方', '未定'];
+  var STAGES = ['日程調整', '編集待ち', '編集・修正中', '確認中', '配信準備'];
+  var INITIAL = { '野上': '野', '鶴崎': '鶴', '確認（又多・鶴崎）': '確', '先方': '先', '未定': '？' };
+  // holder: [fill, text]
+  var HCOL = {
+    '野上': ['#0259DD', '#FFE1D7'],
+    '鶴崎': ['#FF6648', '#3A0F05'],
+    '確認（又多・鶴崎）': ['#84AFFB', '#0B2A5B'],
+    '先方': ['#0B2A5B', '#FFE1D7'],
+    '未定': ['#FFFFFF', '#C2330F']
+  };
+  // stage: [fill, text]
+  var SCOL = {
+    '日程調整': ['#CFE0FE', '#0B2A5B'],
+    '編集待ち': ['#84AFFB', '#0B2A5B'],
+    '編集・修正中': ['#0259DD', '#FFE1D7'],
+    '確認中': ['#FF6648', '#3A0F05'],
+    '配信準備': ['#0B2A5B', '#FFE1D7']
+  };
+
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  var iso = function (d) { return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()); };
+  var now = new Date();
+  var todayIso = iso(now);
+  var weekEnd = iso(new Date(now.getFullYear(), now.getMonth(), now.getDate() + 7));
+  var monthEnd = iso(new Date(now.getFullYear(), now.getMonth() + 1, 0));
+  var md = function (s) { return s ? Number(s.slice(5, 7)) + '/' + Number(s.slice(8, 10)) : '—'; };
+
+  var el = function (tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text != null) e.textContent = text;
+    return e;
+  };
+  var $ = function (id) { return document.getElementById(id); };
+  var badge = function (h, small) {
+    var c = HCOL[h] || HCOL['未定'];
+    var b = el('span', 'badge' + (small ? ' sm' : ''), INITIAL[h] || '？');
+    b.style.background = c[0]; b.style.color = c[1];
+    if (h === '未定') b.style.border = '2px dashed #C2330F';
+    b.title = h;
+    return b;
+  };
+  var dot = function (s) { var d = el('span', 'dot'); d.style.background = (SCOL[s] || SCOL['日程調整'])[0]; return d; };
+  var isLate = function (r) { return !!r.editdue && r.editdue < todayIso && r.stage !== '配信準備'; };
+  var byDue = function (k) { return function (a, b) { return (a[k] || '9999') < (b[k] || '9999') ? -1 : (a[k] || '9999') > (b[k] || '9999') ? 1 : 0; }; };
+
+  var rows = [], kind = 'editdue';
+
+  var seg = $('seg');
+  [['editdue', '編集完了'], ['airdate', '放送日']].forEach(function (p) {
+    var b = el('button', 'segbtn', p[1]);
+    b.type = 'button'; b.dataset.k = p[0];
+    b.addEventListener('click', function () { kind = p[0]; renderBuckets(); });
+    seg.appendChild(b);
+  });
+
+  function renderPeople() {
+    var box = $('people'); box.replaceChildren();
+    HOLDERS.forEach(function (h) {
+      var mine = rows.filter(function (r) { return r.holder === h; }).sort(byDue('editdue'));
+      var card = el('div', 'pcard'), head = el('div', 'phead');
+      head.appendChild(badge(h));
+      head.appendChild(el('span', 'nm', h));
+      head.appendChild(el('span', 'ct', String(mine.length)));
+      card.appendChild(head);
+      var list = el('div', 'plist');
+      if (!mine.length) list.appendChild(el('div', 'empty', 'いまはありません'));
+      mine.forEach(function (r) {
+        var it = el('div', 'pitem');
+        it.appendChild(dot(r.stage));
+        it.appendChild(el('span', 'pn', r.partner));
+        it.appendChild(el('span', 'pd' + (isLate(r) ? ' late' : ''), md(r.editdue)));
+        list.appendChild(it);
+      });
+      card.appendChild(list); box.appendChild(card);
+    });
+  }
+
+  function renderBoard() {
+    var box = $('board'); box.replaceChildren();
+    STAGES.forEach(function (s) {
+      var mine = rows.filter(function (r) { return r.stage === s; });
+      var col = el('div', 'col'), head = el('div', 'colhead');
+      head.style.background = SCOL[s][0]; head.style.color = SCOL[s][1];
+      head.appendChild(el('span', null, s));
+      head.appendChild(el('span', 'ct', String(mine.length)));
+      col.appendChild(head);
+      mine.forEach(function (r) {
+        var card = el('div', 'card');
+        card.appendChild(el('span', 't', r.partner));
+        card.appendChild(el('span', 's', r.corner));
+        var line = el('div', 'r');
+        line.appendChild(badge(r.holder, true));
+        line.appendChild(el('span', 'grow', '編集 ' + (r.editor || '未定')));
+        line.appendChild(el('span', isLate(r) ? 'late' : null, md(r.editdue)));
+        card.appendChild(line); col.appendChild(card);
+      });
+      box.appendChild(col);
+    });
+  }
+
+  function renderBuckets() {
+    Array.prototype.forEach.call(seg.children, function (b) { b.setAttribute('aria-pressed', b.dataset.k === kind ? 'true' : 'false'); });
+    var box = $('buckets'); box.replaceChildren();
+    var defs = ['期限を過ぎている', '今週（7日以内）', '今月', '来月以降', '日付が未定'];
+    var groups = {}; defs.forEach(function (d) { groups[d] = []; });
+    rows.forEach(function (r) {
+      var d = r[kind], g;
+      if (!d) g = '日付が未定';
+      else if (d < todayIso) { if (kind === 'editdue' && r.stage === '配信準備') return; g = '期限を過ぎている'; }
+      else if (d <= weekEnd) g = '今週（7日以内）';
+      else if (d <= monthEnd) g = '今月';
+      else g = '来月以降';
+      groups[g].push(r);
+    });
+    defs.forEach(function (d, i) {
+      var list = groups[d].sort(byDue(kind));
+      var b = el('div', 'bucket');
+      b.appendChild(el('div', 'bhead' + (i === 0 ? ' lateh' : ''), d));
+      var grid = el('div', 'bgrid');
+      if (!list.length) grid.appendChild(el('div', 'empty', 'なし'));
+      list.forEach(function (r) {
+        var card = el('div', 'dcard');
+        card.appendChild(el('span', 'dd' + (i === 0 ? ' late' : ''), md(r[kind])));
+        var m = el('div', 'dm');
+        m.appendChild(el('span', 't', r.partner));
+        var s = el('span', 's'); s.appendChild(dot(r.stage)); s.appendChild(el('span', null, r.stage));
+        m.appendChild(s); card.appendChild(m); card.appendChild(badge(r.holder, true));
+        grid.appendChild(card);
+      });
+      b.appendChild(grid); box.appendChild(b);
+    });
+  }
+
+  function renderTable() {
+    var tb = $('tbody'); tb.replaceChildren();
+    rows.forEach(function (r) {
+      var tr = el('tr');
+      [[md(r.airdate)], [r.corner], [r.partner], [r.stage], [r.holder], [r.editor || '—', 'sub'], [md(r.editdue), 'sub'], [r.slack_replies ? String(r.slack_replies) : '—', 'sub'], [r.basis, 'sub']]
+        .forEach(function (c) { tr.appendChild(el('td', c[1], c[0])); });
+      tb.appendChild(tr);
+    });
+  }
+
+  function render(data) {
+    var all = data.episodes || [];
+    rows = all.filter(function (r) { return r.stage !== '配信済み'; }).sort(byDue('airdate'));
+    $('k-all').textContent = all.length;
+    $('k-done').textContent = all.length - rows.length;
+    $('k-active').textContent = rows.length;
+    $('k-undec').textContent = rows.filter(function (r) { return r.holder === '未定'; }).length;
+    if (data.updated_at) {
+      var d = new Date(data.updated_at);
+      $('updated').textContent = '更新：' + (d.getMonth() + 1) + '/' + d.getDate() + ' ' + pad(d.getHours()) + ':' + pad(d.getMinutes());
+    }
+    renderPeople(); renderBoard(); renderBuckets(); renderTable();
+  }
+
+  fetch('data/episodes.json', { cache: 'no-store' })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(render)
+    .catch(function () {
+      ['people', 'board', 'buckets'].forEach(function (id) { $(id).replaceChildren(el('div', 'fail', 'データを読み込めませんでした。時間をおいて開き直してください。')); });
+      $('updated').textContent = '更新：取得できませんでした';
+    });
+})();
+</script>
+</body>
+</html>

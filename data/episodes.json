@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-21T22:55:00+09:00",
+ "updated_at": "2026-10-22T19:50:00+09:00",
  "episodes": [
   {
    "key": "首長のホンネ#1",
@@ -385,8 +385,8 @@
    "editdue": "2026-10-08",
    "editor": "鶴崎",
    "sheet_status": "先方チェック・編集中",
-   "stage": "編集・修正中",
-   "holder": "鶴崎",
+   "stage": "確認中",
+   "holder": "確認（又多・鶴崎）",
    "basis": "Slack",
    "slack_replies": 18,
    "slack_last": "2026-10-21"
@@ -400,9 +400,9 @@
    "editdue": "2026-10-13",
    "editor": "野上",
    "sheet_status": "先方チェック・編集中",
-   "stage": "確認中",
-   "holder": "先方",
-   "basis": "シート",
+   "stage": "編集・修正中",
+   "holder": "野上",
+   "basis": "Slack",
    "slack_replies": 28,
    "slack_last": "2026-10-17"
   },
@@ -417,7 +417,7 @@
    "sheet_status": "コンテンツ完成",
    "stage": "配信準備",
    "holder": "鶴崎",
-   "basis": "推定",
+   "basis": "Slack",
    "slack_replies": 6,
    "slack_last": "2026-10-21"
   },
@@ -461,8 +461,8 @@
    "editor": "鶴崎",
    "sheet_status": "先方チェック・編集中",
    "stage": "確認中",
-   "holder": "先方",
-   "basis": "シート",
+   "holder": "確認（又多・鶴崎）",
+   "basis": "Slack",
    "slack_replies": null,
    "slack_last": ""
   },
@@ -490,7 +490,7 @@
    "editdue": "2026-11-03",
    "editor": "野上",
    "sheet_status": "日程調整済み",
-   "stage": "編集待ち",
+   "stage": "編集・修正中",
    "holder": "野上",
    "basis": "Slack",
    "slack_replies": null,
@@ -503,10 +503,10 @@
    "partner": "識学×郡山市",
    "airdate": "2026-11-20",
    "editdue": "2026-11-05",
-   "editor": "",
+   "editor": "野上",
    "sheet_status": "素材格納",
    "stage": "編集待ち",
-   "holder": "未定",
+   "holder": "野上",
    "basis": "シート",
    "slack_replies": null,
    "slack_last": ""

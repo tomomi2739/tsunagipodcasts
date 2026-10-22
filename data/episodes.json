@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-22T19:50:00+09:00",
+ "updated_at": "2026-10-22T22:44:21+09:00",
  "episodes": [
   {
    "key": "首長のホンネ#1",
@@ -388,8 +388,8 @@
    "stage": "確認中",
    "holder": "確認（又多・鶴崎）",
    "basis": "Slack",
-   "slack_replies": 18,
-   "slack_last": "2026-10-21"
+   "slack_replies": 30,
+   "slack_last": "2026-10-22"
   },
   {
    "key": "ToGのホンネ#55",
@@ -403,8 +403,8 @@
    "stage": "編集・修正中",
    "holder": "野上",
    "basis": "Slack",
-   "slack_replies": 28,
-   "slack_last": "2026-10-17"
+   "slack_replies": 29,
+   "slack_last": "2026-10-22"
   },
   {
    "key": "ToGのホンネ#56",
@@ -478,7 +478,7 @@
    "stage": "確認中",
    "holder": "確認（又多・鶴崎）",
    "basis": "Slack",
-   "slack_replies": 1,
+   "slack_replies": 2,
    "slack_last": "2026-10-21"
   },
   {

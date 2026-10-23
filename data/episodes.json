@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-23T19:00:00+09:00",
+ "updated_at": "2026-10-24T07:44:16+09:00",
  "episodes": [
   {
    "key": "首長のホンネ#1",
@@ -403,8 +403,8 @@
    "stage": "編集・修正中",
    "holder": "野上",
    "basis": "Slack",
-   "slack_replies": 32,
-   "slack_last": "2026-10-23"
+   "slack_replies": 33,
+   "slack_last": "2026-10-24"
   },
   {
    "key": "ToGのホンネ#56",
@@ -493,8 +493,8 @@
    "stage": "確認中",
    "holder": "確認（又多・鶴崎）",
    "basis": "Slack",
-   "slack_replies": 1,
-   "slack_last": "2026-10-23"
+   "slack_replies": 2,
+   "slack_last": "2026-10-24"
   },
   {
    "key": "コラボ収録/識学×郡山市",

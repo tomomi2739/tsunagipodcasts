@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-24T07:44:16+09:00",
+ "updated_at": "2026-10-24T19:50:00+09:00",
  "episodes": [
   {
    "key": "首長のホンネ#1",
@@ -369,9 +369,9 @@
    "airdate": "2026-10-21",
    "editdue": "2026-10-06",
    "editor": "鶴崎",
-   "sheet_status": "投稿予約",
-   "stage": "配信準備",
-   "holder": "鶴崎",
+   "sheet_status": "放送済",
+   "stage": "配信済み",
+   "holder": "",
    "basis": "シート",
    "slack_replies": 1,
    "slack_last": "2026-10-06"
@@ -384,10 +384,10 @@
    "airdate": "2026-10-23",
    "editdue": "2026-10-08",
    "editor": "鶴崎",
-   "sheet_status": "先方チェック・編集中",
-   "stage": "確認中",
-   "holder": "確認（又多・鶴崎）",
-   "basis": "Slack",
+   "sheet_status": "放送済",
+   "stage": "配信済み",
+   "holder": "",
+   "basis": "シート",
    "slack_replies": 30,
    "slack_last": "2026-10-22"
   },
@@ -400,10 +400,10 @@
    "editdue": "2026-10-13",
    "editor": "野上",
    "sheet_status": "先方チェック・編集中",
-   "stage": "編集・修正中",
-   "holder": "野上",
+   "stage": "確認中",
+   "holder": "確認（又多・鶴崎）",
    "basis": "Slack",
-   "slack_replies": 33,
+   "slack_replies": 34,
    "slack_last": "2026-10-24"
   },
   {
@@ -418,8 +418,8 @@
    "stage": "配信準備",
    "holder": "鶴崎",
    "basis": "Slack",
-   "slack_replies": 7,
-   "slack_last": "2026-10-23"
+   "slack_replies": 9,
+   "slack_last": "2026-10-24"
   },
   {
    "key": "コラボ収録#51",

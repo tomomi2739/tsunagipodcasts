@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-24T19:50:00+09:00",
+ "updated_at": "2026-10-28T20:00:00+09:00",
  "episodes": [
   {
    "key": "首長のホンネ#1",
@@ -400,11 +400,11 @@
    "editdue": "2026-10-13",
    "editor": "野上",
    "sheet_status": "先方チェック・編集中",
-   "stage": "確認中",
-   "holder": "確認（又多・鶴崎）",
+   "stage": "配信済み",
+   "holder": "",
    "basis": "Slack",
-   "slack_replies": 34,
-   "slack_last": "2026-10-24"
+   "slack_replies": 54,
+   "slack_last": "2026-10-28"
   },
   {
    "key": "ToGのホンネ#56",
@@ -433,8 +433,8 @@
    "stage": "確認中",
    "holder": "確認（又多・鶴崎）",
    "basis": "Slack",
-   "slack_replies": 2,
-   "slack_last": "2026-10-19"
+   "slack_replies": 6,
+   "slack_last": "2026-10-28"
   },
   {
    "key": "現場のホンネ#49",
@@ -489,7 +489,7 @@
    "airdate": "2026-11-18",
    "editdue": "2026-11-03",
    "editor": "野上",
-   "sheet_status": "日程調整済み",
+   "sheet_status": "先方チェック・編集中",
    "stage": "確認中",
    "holder": "確認（又多・鶴崎）",
    "basis": "Slack",

@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-31T07:45:18+09:00",
+ "updated_at": "2026-10-31T19:44:15+09:00",
  "episodes": [
   {
    "key": "首長のホンネ#1",
@@ -476,10 +476,10 @@
    "editor": "野上",
    "sheet_status": "先方チェック・編集中",
    "stage": "確認中",
-   "holder": "確認（又多・鶴崎）",
+   "holder": "先方",
    "basis": "Slack",
-   "slack_replies": 6,
-   "slack_last": "2026-10-30"
+   "slack_replies": 7,
+   "slack_last": "2026-10-31"
   },
   {
    "key": "ToGのホンネ#57",
@@ -505,11 +505,11 @@
    "editdue": "2026-11-05",
    "editor": "野上",
    "sheet_status": "先方チェック・編集中",
-   "stage": "編集・修正中",
-   "holder": "野上",
-   "basis": "推定",
-   "slack_replies": null,
-   "slack_last": ""
+   "stage": "確認中",
+   "holder": "確認（又多・鶴崎）",
+   "basis": "Slack",
+   "slack_replies": 0,
+   "slack_last": "2026-10-31"
   },
   {
    "key": "現場のホンネ#58",
@@ -520,11 +520,11 @@
    "editdue": "2026-11-10",
    "editor": "野上",
    "sheet_status": "素材格納",
-   "stage": "編集待ち",
-   "holder": "野上",
+   "stage": "確認中",
+   "holder": "確認（又多・鶴崎）",
    "basis": "Slack",
-   "slack_replies": null,
-   "slack_last": ""
+   "slack_replies": 1,
+   "slack_last": "2026-10-31"
   },
   {
    "key": "コラボ収録#61",

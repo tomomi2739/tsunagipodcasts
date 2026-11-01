@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-31T19:44:15+09:00",
+ "updated_at": "2026-11-01T16:00:00+09:00",
  "episodes": [
   {
    "key": "首長のホンネ#1",
@@ -520,11 +520,11 @@
    "editdue": "2026-11-10",
    "editor": "野上",
    "sheet_status": "素材格納",
-   "stage": "確認中",
-   "holder": "確認（又多・鶴崎）",
+   "stage": "編集・修正中",
+   "holder": "野上",
    "basis": "Slack",
-   "slack_replies": 1,
-   "slack_last": "2026-10-31"
+   "slack_replies": 5,
+   "slack_last": "2026-11-01"
   },
   {
    "key": "コラボ収録#61",

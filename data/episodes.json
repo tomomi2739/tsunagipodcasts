@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-05T19:50:00+09:00",
+ "updated_at": "2026-11-06T07:44:08+09:00",
  "episodes": [
   {
    "key": "首長のホンネ#1",
@@ -430,11 +430,11 @@
    "editdue": "2026-10-22",
    "editor": "野上",
    "sheet_status": "先方チェック・編集中",
-   "stage": "確認中",
-   "holder": "確認（又多・鶴崎）",
+   "stage": "配信準備",
+   "holder": "鶴崎",
    "basis": "Slack",
-   "slack_replies": 12,
-   "slack_last": "2026-11-05"
+   "slack_replies": 21,
+   "slack_last": "2026-11-06"
   },
   {
    "key": "現場のホンネ#49",
@@ -445,10 +445,10 @@
    "editdue": "2026-10-22",
    "editor": "野上",
    "sheet_status": "先方チェック・編集中",
-   "stage": "確認中",
-   "holder": "確認（又多・鶴崎）",
+   "stage": "配信準備",
+   "holder": "鶴崎",
    "basis": "Slack",
-   "slack_replies": 12,
+   "slack_replies": 14,
    "slack_last": "2026-11-05"
   },
   {
@@ -460,10 +460,10 @@
    "editdue": "2026-10-24",
    "editor": "鶴崎",
    "sheet_status": "先方チェック・編集中",
-   "stage": "編集・修正中",
+   "stage": "配信準備",
    "holder": "鶴崎",
    "basis": "Slack",
-   "slack_replies": 18,
+   "slack_replies": 21,
    "slack_last": "2026-11-05"
   },
   {

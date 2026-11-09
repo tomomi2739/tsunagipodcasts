@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-07T19:45:00+09:00",
+ "updated_at": "2026-11-09T08:00:00+09:00",
  "episodes": [
   {
    "key": "首長のホンネ#1",
@@ -561,6 +561,51 @@
    "no": "63",
    "corner": "コラボ収録",
    "partner": "横須賀市",
+   "airdate": "",
+   "editdue": "",
+   "editor": "",
+   "sheet_status": "",
+   "stage": "日程調整",
+   "holder": "未定",
+   "basis": "シート",
+   "slack_replies": null,
+   "slack_last": ""
+  },
+  {
+   "key": "未設定#64",
+   "no": "64",
+   "corner": "未設定",
+   "partner": "大洲市",
+   "airdate": "",
+   "editdue": "",
+   "editor": "",
+   "sheet_status": "",
+   "stage": "日程調整",
+   "holder": "未定",
+   "basis": "シート",
+   "slack_replies": null,
+   "slack_last": ""
+  },
+  {
+   "key": "未設定#65",
+   "no": "65",
+   "corner": "未設定",
+   "partner": "府中市",
+   "airdate": "",
+   "editdue": "",
+   "editor": "",
+   "sheet_status": "",
+   "stage": "日程調整",
+   "holder": "未定",
+   "basis": "シート",
+   "slack_replies": null,
+   "slack_last": ""
+  },
+  {
+   "key": "未設定#66",
+   "no": "66",
+   "corner": "未設定",
+   "partner": "東松山市",
    "airdate": "",
    "editdue": "",
    "editor": "",

@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-09T08:00:00+09:00",
+ "updated_at": "2026-11-10T07:44:29+09:00",
  "episodes": [
   {
    "key": "首長のホンネ#1",
@@ -475,11 +475,11 @@
    "editdue": "2026-10-29",
    "editor": "野上",
    "sheet_status": "先方チェック・編集中",
-   "stage": "確認中",
-   "holder": "先方",
+   "stage": "配信準備",
+   "holder": "鶴崎",
    "basis": "Slack",
-   "slack_replies": 7,
-   "slack_last": "2026-10-31"
+   "slack_replies": 9,
+   "slack_last": "2026-11-09"
   },
   {
    "key": "ToGのホンネ#57",

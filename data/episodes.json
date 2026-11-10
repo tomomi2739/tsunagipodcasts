@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-10T12:00:00+09:00",
+ "updated_at": "2026-11-11T07:45:00+09:00",
  "episodes": [
   {
    "key": "首長のホンネ#1",
@@ -429,10 +429,10 @@
    "airdate": "2026-11-06",
    "editdue": "2026-10-22",
    "editor": "野上",
-   "sheet_status": "投稿予約",
+   "sheet_status": "放送済",
    "stage": "配信済み",
    "holder": "",
-   "basis": "Slack",
+   "basis": "シート",
    "slack_replies": 22,
    "slack_last": "2026-11-06"
   },
@@ -444,10 +444,10 @@
    "airdate": "2026-11-06",
    "editdue": "2026-10-22",
    "editor": "野上",
-   "sheet_status": "投稿予約",
+   "sheet_status": "放送済",
    "stage": "配信済み",
    "holder": "",
-   "basis": "Slack",
+   "basis": "シート",
    "slack_replies": 14,
    "slack_last": "2026-11-05"
   },
@@ -474,11 +474,11 @@
    "airdate": "2026-11-13",
    "editdue": "2026-10-29",
    "editor": "野上",
-   "sheet_status": "先方チェック・編集中",
+   "sheet_status": "投稿予約",
    "stage": "配信準備",
-   "holder": "鶴崎",
+   "holder": "野上",
    "basis": "Slack",
-   "slack_replies": 10,
+   "slack_replies": 15,
    "slack_last": "2026-11-10"
   },
   {

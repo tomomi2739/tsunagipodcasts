@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-12T19:50:00+09:00",
+ "updated_at": "2026-11-13T07:50:00+09:00",
  "episodes": [
   {
    "key": "首長のホンネ#1",
@@ -505,10 +505,10 @@
    "editdue": "2026-11-05",
    "editor": "野上",
    "sheet_status": "先方チェック・編集中",
-   "stage": "確認中",
-   "holder": "確認（又多・鶴崎）",
+   "stage": "配信準備",
+   "holder": "鶴崎",
    "basis": "Slack",
-   "slack_replies": 3,
+   "slack_replies": 4,
    "slack_last": "2026-11-12"
   },
   {
@@ -545,10 +545,10 @@
    "key": "コラボ収録#62",
    "no": "62",
    "corner": "コラボ収録",
-   "partner": "常総市",
-   "airdate": "",
-   "editdue": "",
-   "editor": "",
+   "partner": "松前町",
+   "airdate": "2026-12-11",
+   "editdue": "2026-11-26",
+   "editor": "木",
    "sheet_status": "",
    "stage": "日程調整",
    "holder": "未定",
@@ -557,9 +557,9 @@
    "slack_last": ""
   },
   {
-   "key": "コラボ収録#63",
+   "key": "未設定#63",
    "no": "63",
-   "corner": "コラボ収録",
+   "corner": "未設定",
    "partner": "横須賀市",
    "airdate": "",
    "editdue": "",

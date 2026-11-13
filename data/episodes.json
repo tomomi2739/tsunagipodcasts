@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-13T07:50:00+09:00",
+ "updated_at": "2026-11-13T19:46:00+09:00",
  "episodes": [
   {
    "key": "首長のホンネ#1",
@@ -505,11 +505,11 @@
    "editdue": "2026-11-05",
    "editor": "野上",
    "sheet_status": "先方チェック・編集中",
-   "stage": "配信準備",
-   "holder": "鶴崎",
+   "stage": "配信済み",
+   "holder": "",
    "basis": "Slack",
-   "slack_replies": 4,
-   "slack_last": "2026-11-12"
+   "slack_replies": 5,
+   "slack_last": "2026-11-13"
   },
   {
    "key": "現場のホンネ#58",
@@ -530,7 +530,7 @@
    "key": "コラボ収録#61",
    "no": "61",
    "corner": "コラボ収録",
-   "partner": "都城市",
+   "partner": "ジャパンメディア都城",
    "airdate": "2026-12-02",
    "editdue": "2026-11-16",
    "editor": "野上",

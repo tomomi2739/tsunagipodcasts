@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-17T19:50:00+09:00",
+ "updated_at": "2026-11-18T07:45:00+09:00",
  "episodes": [
   {
    "key": "首長のホンネ#1",
@@ -534,11 +534,11 @@
    "airdate": "2026-12-02",
    "editdue": "2026-11-16",
    "editor": "野上",
-   "sheet_status": "素材格納",
-   "stage": "編集・修正中",
-   "holder": "野上",
+   "sheet_status": "先方チェック・編集中",
+   "stage": "確認中",
+   "holder": "確認（又多・鶴崎）",
    "basis": "Slack",
-   "slack_replies": 8,
+   "slack_replies": 1,
    "slack_last": "2026-11-17"
   },
   {
@@ -548,10 +548,10 @@
    "partner": "松前町×サイボウズ",
    "airdate": "2026-12-11",
    "editdue": "2026-11-26",
-   "editor": "木",
+   "editor": "野上",
    "sheet_status": "素材格納",
    "stage": "編集待ち",
-   "holder": "未定",
+   "holder": "野上",
    "basis": "シート",
    "slack_replies": null,
    "slack_last": ""
@@ -563,10 +563,10 @@
    "partner": "宮城県庁×ポケットサイン",
    "airdate": "2026-12-18",
    "editdue": "2026-11-30",
-   "editor": "月",
+   "editor": "野上",
    "sheet_status": "素材格納",
    "stage": "編集待ち",
-   "holder": "未定",
+   "holder": "野上",
    "basis": "シート",
    "slack_replies": null,
    "slack_last": ""

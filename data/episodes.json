@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-18T07:45:00+09:00",
+ "updated_at": "2026-11-18T19:50:00+09:00",
  "episodes": [
   {
    "key": "首長のホンネ#1",
@@ -535,11 +535,11 @@
    "editdue": "2026-11-16",
    "editor": "野上",
    "sheet_status": "先方チェック・編集中",
-   "stage": "確認中",
-   "holder": "確認（又多・鶴崎）",
+   "stage": "編集・修正中",
+   "holder": "野上",
    "basis": "Slack",
-   "slack_replies": 1,
-   "slack_last": "2026-11-17"
+   "slack_replies": 2,
+   "slack_last": "2026-11-18"
   },
   {
    "key": "コラボ収録#62",
@@ -552,9 +552,9 @@
    "sheet_status": "素材格納",
    "stage": "編集待ち",
    "holder": "野上",
-   "basis": "シート",
-   "slack_replies": null,
-   "slack_last": ""
+   "basis": "Slack",
+   "slack_replies": 5,
+   "slack_last": "2026-11-18"
   },
   {
    "key": "コラボ収録#63",

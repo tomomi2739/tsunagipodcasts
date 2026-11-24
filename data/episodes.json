@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-24T19:45:00+09:00",
+ "updated_at": "2026-11-25T07:44:00+09:00",
  "episodes": [
   {
    "key": "首長のホンネ#1",
@@ -459,7 +459,7 @@
    "airdate": "2026-11-11",
    "editdue": "2026-10-24",
    "editor": "鶴崎",
-   "sheet_status": "投稿予約",
+   "sheet_status": "放送済",
    "stage": "配信済み",
    "holder": "",
    "basis": "Slack",
@@ -474,7 +474,7 @@
    "airdate": "2026-11-13",
    "editdue": "2026-10-29",
    "editor": "野上",
-   "sheet_status": "投稿予約",
+   "sheet_status": "放送済",
    "stage": "配信済み",
    "holder": "",
    "basis": "Slack",
@@ -489,7 +489,7 @@
    "airdate": "2026-11-18",
    "editdue": "2026-11-03",
    "editor": "野上",
-   "sheet_status": "投稿予約",
+   "sheet_status": "放送済",
    "stage": "配信済み",
    "holder": "",
    "basis": "Slack",
@@ -521,10 +521,10 @@
    "editor": "野上",
    "sheet_status": "先方チェック・編集中",
    "stage": "確認中",
-   "holder": "確認（又多・鶴崎）",
+   "holder": "先方",
    "basis": "Slack",
-   "slack_replies": 12,
-   "slack_last": "2026-11-24"
+   "slack_replies": 14,
+   "slack_last": "2026-11-25"
   },
   {
    "key": "コラボ収録#61",
@@ -551,10 +551,10 @@
    "editor": "野上",
    "sheet_status": "先方チェック・編集中",
    "stage": "確認中",
-   "holder": "確認（又多・鶴崎）",
+   "holder": "先方",
    "basis": "Slack",
-   "slack_replies": 2,
-   "slack_last": "2026-11-23"
+   "slack_replies": 3,
+   "slack_last": "2026-11-25"
   },
   {
    "key": "コラボ収録#63",

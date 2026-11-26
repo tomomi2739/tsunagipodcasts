@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-25T07:44:00+09:00",
+ "updated_at": "2026-11-26T19:50:00+09:00",
  "episodes": [
   {
    "key": "首長のホンネ#1",
@@ -504,10 +504,10 @@
    "airdate": "2026-11-20",
    "editdue": "2026-11-05",
    "editor": "野上",
-   "sheet_status": "投稿予約",
+   "sheet_status": "放送済",
    "stage": "配信済み",
    "holder": "",
-   "basis": "Slack",
+   "basis": "シート",
    "slack_replies": 5,
    "slack_last": "2026-11-13"
   },
@@ -538,8 +538,8 @@
    "stage": "配信準備",
    "holder": "鶴崎",
    "basis": "Slack",
-   "slack_replies": 7,
-   "slack_last": "2026-11-21"
+   "slack_replies": 8,
+   "slack_last": "2026-11-26"
   },
   {
    "key": "コラボ収録#62",
@@ -572,32 +572,32 @@
    "slack_last": ""
   },
   {
-   "key": "未設定#64",
+   "key": "首長のホンネ#64",
    "no": "64",
-   "corner": "未設定",
+   "corner": "首長のホンネ",
    "partner": "大洲市",
-   "airdate": "",
-   "editdue": "",
-   "editor": "",
+   "airdate": "2026-12-25",
+   "editdue": "2026-12-06",
+   "editor": "野上",
    "sheet_status": "",
-   "stage": "日程調整",
-   "holder": "未定",
-   "basis": "シート",
+   "stage": "編集待ち",
+   "holder": "野上",
+   "basis": "推定",
    "slack_replies": null,
    "slack_last": ""
   },
   {
-   "key": "未設定#65",
+   "key": "首長のホンネ#65",
    "no": "65",
-   "corner": "未設定",
+   "corner": "首長のホンネ",
    "partner": "府中市",
-   "airdate": "",
-   "editdue": "",
-   "editor": "",
+   "airdate": "2027-01-01",
+   "editdue": "2026-12-09",
+   "editor": "野上",
    "sheet_status": "",
-   "stage": "日程調整",
-   "holder": "未定",
-   "basis": "シート",
+   "stage": "編集待ち",
+   "holder": "野上",
+   "basis": "推定",
    "slack_replies": null,
    "slack_last": ""
   },
